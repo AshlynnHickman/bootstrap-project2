@@ -26,7 +26,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.html"><img height="inherit" width="40px"
+            <a class="navbar-brand js-scroll-trigger text-danger" href="index.html"><img height="inherit" width="40px"
                     src="crow.svg" /> Weather</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -67,11 +67,17 @@
             <span class="sr-only">Next</span>
         </a>
         <div class="carousel-caption d-none d-md-block">
-            <h1 class="mx-auto my-0 text-uppercase">REDRUM'S WEATHER SERVICE</h1>
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Redrum's Weather Service</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Fugit asperiores, excepturi quod deserunt.</h2>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3" style="max-width: 70em; margin: auto; margin-top: 2em; padding: 5em;">
         <div class="row">
             <div class="col-md-4">
                 <svg width="13em" height="13em" viewBox="0 0 16 16" class="bi bi-sun" fill="currentColor"
@@ -87,9 +93,8 @@
                     <ul class="card-text">
                         <li>high/low ................ 100*/50*</li>
                         <li>humidity ................ 11%</li>
-                        <li>wind .................... W 5mph</li>
-                        <li>dewpoint ................ 32*</li>
-
+                        <li>wind ....................... W 5mph</li>
+                        <li>dewpoint ............... 32*</li>
                     </ul>
                     <p class="card-text"><small class="text-muted">Updated 29 September 2020</small></p>
                 </div>
@@ -97,8 +102,8 @@
         </div>
     </div>
 
-    <div class="card-group">
-        <div class="card">
+    <div class="card-deck">
+        <div class="card border-danger">
             <img src="https://png.pngtree.com/png-vector/20190114/ourlarge/pngtree-vector-sundown-icon-png-image_312983.jpg"
                 class="card-img-top" alt="...">
             <div class="card-body">
@@ -108,21 +113,23 @@
                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="card-text"><small class="text-muted">Updated 29 September 2020</small></p>
+                <p class="card-text"><small class="text-muted">Updated 30 September 2020</small></p>
             </div>
         </div>
-        <div class="card">
+        <div class="card border-danger">
             <img src="https://www.nicepng.com/png/detail/52-528464_moon-clipart-half-moon-black.png"
                 class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Moon Phase</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu dictum
-                    varius duis. Integer quis auctor elit sed.</p>
-                <p class="card-text"><small class="text-muted">Updated 29 September 2020</small></p>
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text"><small class="text-muted">Updated 30 September 2020</small></p>
             </div>
         </div>
-        <div class="card">
+        <div class="card border-danger">
             <img src="https://vectorified.com/images/quality-icon-png-27.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Air Quality</h5>
@@ -141,6 +148,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container">Copyright © Zackery Hatch &amp; Ashlynn Hickman 2020</div>
+    </footer>
 </body>
 
 </html>
