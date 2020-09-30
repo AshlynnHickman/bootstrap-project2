@@ -36,24 +36,52 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./hourly.html">Hourly</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./today.html">Today</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./weekly.html">Weekly</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigge /r" href="./weekly.html">Weekly</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- Masthead-->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Redrum's Weather Service</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-          asperiores, excepturi quod deserunt.</h2>
-        <a class="btn btn-primary js-scroll-trigger" href="#about">Get Started</a>
+  <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="10000">
+        <img src="pictures/desert.jpg" class="d-block w-100" alt="...">
+
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="pictures/grandcanyon.jpg" class="d-block w-100" alt="...">
+
+      </div>
+      <div class="carousel-item">
+        <img src="pictures/rockyArizona.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-  </header>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <div class="carousel-caption d-none d-md-block">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase text-white">Redrum's Weekly Weather</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">With the help of the Murder, be prepared for this week's weather.
+            And expect the unexpected.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Weather card header -->
+  <div class="d-flex flex-nowrap justify-content-around">
+
+    <h1 style="text-align: center; margin: 1em; text-decoration: underline;">This week's Weather<br /><span
+        class="badge badge-secondary">30 September 2020</span></h1>
+  </div>
   <!-- Cards for the weather -->
-  <section class="d-flex m-2 p-5">
+  <section class="d-flex flex-wrap m-2">
     <div class="card text-white bg-dark mb-3 m-3" style="max-width: 18rem;">
       <div class="text-danger card-header">
         <h3 class="text-sm-left">Day of the Week</h3>
