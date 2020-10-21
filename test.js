@@ -2,6 +2,7 @@ const getBtn = document.getElementById('get-btn');
 
 function getJSON(url) {
    const xhr = new XMLHttpRequest();
+
    xhr.open('GET', url);
    xhr.onload = () => {
       if(xhr.status === 200) {
