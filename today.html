@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <h1 style="text-align: center; margin: 1em; text-decoration: underline;">Today's Weather<br /><span class="badge badge-secondary">30 September
+    <h1 style="text-align: center; margin: 1em; text-decoration: underline;">Today's Weather<br /><span id="date" class="day badge badge-secondary">30 September
             2020</span></h1>
 
     <div class="card mb-3" style="max-width: 70em; margin: auto; margin-top: 2em; padding: 5em;">
@@ -96,7 +96,7 @@
                 </svg>
             </div>
             <div class="col-md-8">
-                <div class="card-body">
+                <div id="today" class="card-body">
                     <h5 class="card-title">Today</h5>
                     <ul class="card-text">
                         <li>high/low ................ 100*/50*</li>
@@ -156,6 +156,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="js/date.js"></script>
 
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50">
