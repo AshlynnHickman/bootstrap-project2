@@ -44,7 +44,8 @@
         </div>
     </nav>
 
-    <div id="carouselExampleInterval" id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carouselExampleInterval" id="carouselExampleFade" class="carousel slide carousel-fade"
+        data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-interval="10000">
                 <img src="pictures/desert.jpg" class="d-block w-100" alt="...">
@@ -82,29 +83,22 @@
         </div>
     </div>
 
-    <h1 style="text-align: center; margin: 1em; text-decoration: underline;">Today's Weather<br /><span id="date" class="day badge badge-secondary">30 September
+    <h1 style="text-align: center; margin: 1em; text-decoration: underline;">Today's Weather<br /><span id="date"
+            class="day badge badge-secondary">30 September
             2020</span></h1>
 
     <div class="card mb-3" style="max-width: 70em; margin: auto; margin-top: 2em; padding: 5em;">
         <div class="row">
-            <div class="col-md-4">
-                <svg width="13em" height="13em" viewBox="0 0 16 16" class="bi bi-sun" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.5 8a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z" />
-                    <path fill-rule="evenodd"
-                        d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" />
-                </svg>
-            </div>
+            <div id="svg" class="col-md-4"></div>
             <div class="col-md-8">
                 <div id="today" class="card-body">
                     <h5 class="card-title">Today</h5>
                     <ul class="card-text">
-                        <li>high/low ................ 100*/50*</li>
-                        <li>humidity ................ 11%</li>
-                        <li>wind ....................... W 5mph</li>
-                        <li>dewpoint ............... 32*</li>
+                        <li id="temps"></li>
+                        <li id="humidity"></li>
+                        <li id="wind"></li>
                     </ul>
-                    <p class="card-text"><small class="text-muted">Updated 29 September 2020</small></p>
+                    <p id="updated" class="card-text"><small class="text-muted"></small></p>
                 </div>
             </div>
         </div>
@@ -116,35 +110,17 @@
                 class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Sunrise and Sunset</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="card-text"><small class="text-muted">Updated 30 September 2020</small></p>
+                <p id="sun" class="card-text"></p>
+                <p id="updated" class="card-text"><small class="text-muted"></small></p>
             </div>
         </div>
         <div class="card border-danger">
             <img src="https://www.nicepng.com/png/detail/52-528464_moon-clipart-half-moon-black.png"
                 class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Moon Phase</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="card-text"><small class="text-muted">Updated 30 September 2020</small></p>
-            </div>
-        </div>
-        <div class="card border-danger">
-            <img src="https://vectorified.com/images/quality-icon-png-27.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Air Quality</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu dictum
-                    varius duis. Integer quis auctor elit sed.</p>
-                <p class="card-text"><small class="text-muted">Updated 29 September 2020</small></p>
+                <h5 class="card-title">Moon Statistics</h5>
+                <p id="moon" class="card-text"></p>
+                <p id="updated" class="card-text"><small class="text-muted"></small></p>
             </div>
         </div>
     </div>
@@ -157,6 +133,7 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="js/date.js"></script>
+    <script src="js/today.js"></script>
 
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50">
